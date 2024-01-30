@@ -1,0 +1,163 @@
+
+
+body {
+  background:url(hgr2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p {
+	color: rgb(185, 172, 177);
+	font-size: 15pt;
+  margin: 0px;
+  margin-left: 50px;
+  font-family: monospace;
+  max-width: 700px;
+}
+
+h1{
+  display: inline-block;
+}
+
+h1, p {
+  margin-bottom: 10px;
+}
+
+.ime {
+	font-size: 110pt;
+	font-family: monospace;
+  text-align: left;
+  margin-left: 40px;
+  margin-top: 235px;
+  background: url("images/chrm.jpg");
+  background-size: contain;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0px -3px 1px #111);
+  animation: animate 5s infinite alternate;
+}
+
+
+
+.navbar {
+    display: flex;
+    overflow: hidden;
+    background-color:rgb(140, 128, 155);    
+    justify-content: center;
+    width: 100%;
+    font-family: monospace ;
+    z-index: 10;
+  }
+
+  .navbar a {
+    float: left;
+    color:#3a3a41;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .navbar a:hover {
+    background-color: rgb(220, 202, 220);
+    color: black;
+  }
+  
+  .navbar a.active {
+    background-color:rgb(0, 0, 0);
+    color: rgb(247, 247, 247);
+  }
+  .navbar a.active:hover {
+    background-color:rgb(0, 0, 0);
+  }
+
+  .content{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .dropdown{
+    float:left;
+    overflow: hidden;
+  }
+
+  .dropdown .linker{
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    font-family: monospace;
+    margin: 0;
+  }
+
+  .navbar a:hover, .dropdown:hover .linker{
+    background-color: rgb(238, 224, 238);
+  
+  }
+
+  .link .active:hover {
+    color: black;
+  }  
+
+  .content a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .content a:hover{
+    background-color: rgb(246, 234, 244);
+  }
+  .dropdown:hover .content{
+    display: block;
+  }
+  
+  .dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: rgb(234, 220, 234);
+    
+  }
+
+  .dropdown:hover .content{
+    display: block;
+  }
+
+  .linker:hover .content{
+    display: block;
+    flex-direction: column;
+    justify-content: space-around;
+
+  }
+
+
+
+  @keyframes animate {
+    100%{
+      background-position: 100px 0, 100px 0, 100px 0;
+    }
+  }
+  
+
+  .container {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    max-width: auto;
+   max-height: auto;
+   margin-top: -250px;
+   overflow: auto;
+  }
+
+  #insta{
+    
+    max-width: 66px;
+  }
+  #mail{
+    max-width: 100px;
+    margin-right: 0px;
+  }
+
+  .slika{
+    margin-right: 17px;
+    float: right;
+    max-width: 70px;
+  }
